@@ -1,0 +1,37 @@
+<html>
+	<body>
+		<title> ('Pizza World!'); </title>
+			<script>		
+		//Hugo Mysbergen - Opdracht: Pizza calculator	
+		if (confirm("Would you like to order some pizza?")) // if (confirm( betekent dat er eerst een pop-up verschijnt met 'would you like to order some pizza?' er wordt een vraag gesteld en als je dat bevestigd dan kom je bij de volgende pagina.
+
+		var smallPrice = 5.99; // Dit zijn de prijzen van de pizza's. var betekent dat de prijzen altijd kunnen veranderen.
+		var mediumPrice = 7.99;
+		var largePrice = 9.99;
+
+		var smallAmount = prompt('How many small pizzas do you want?'); // var smallAmount betekent dat het aantal small/medium/large pizza's variabel is en je dus het aantal kan veranderen als je de pagina refreshed.
+		var mediumAmount = prompt('How many medium pizzas do you want?');
+		var largeAmount = prompt('How many large pizzas dou you want?');
+
+		var smallTotal = smallAmount * smallPrice; // var betekent in dit geval dat het aantal small/medium/large x de prijs het totale bedrag is en dat ook weer variabel is, het ligt er helemaal aan hoeveel pizza's je besteld.
+		var mediumTotal = mediumAmount * mediumPrice;
+		var largeTotal = largeAmount * largePrice;	
+		var orderTotal = smallTotal + mediumTotal + largeTotal; // orderTotal = small/medium/largeTotal bij elkaar opgeteld, ook dit is variabel. Hoe meer pizza's je besteld, hoe hoger het totale bedrag is.
+
+		document.write('Thank you for your order!'); // Hiermee laat ik door documetn.write zien 'Thank you for your order'
+		document.write('<br>');
+		document.write('<br>');
+		document.write('Ordered small pizzas: ' + smallAmount +'<br>'+ 'Total Price small pizzas: € ' + smallAmount * smallPrice); // documetn.write laat zien wat de som is en het eindbedrag zien in dit geval.
+		document.write('<br>');
+		document.write('<br>');
+		document.write('Ordered medium pizzas: ' + mediumAmount +'<br>'+ 'Total Price medium pizzas: € ' + mediumAmount * mediumPrice);
+		document.write('<br>');
+		document.write('<br>');
+		document.write('Ordered large pizzas: ' + largeAmount +'<br>'+ 'Total Price large pizzas: € ' + largeAmount * largePrice);
+		document.write('<br>');
+		document.write('<br>');
+		document.write('Subtotal € ' + orderTotal); // Hiermee laat ik het totale bedrag van de hele order zien.
+		
+		</script>
+ 	</body>
+</html>		
